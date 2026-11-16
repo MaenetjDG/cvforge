@@ -1,3 +1,5 @@
+import { CurrentYear } from "@/components/current-year";
+
 const features = [
   {
     number: "01",
@@ -96,7 +98,7 @@ export default function Home() {
 
       <section id="start" className="mx-auto max-w-[var(--content-width)] px-[var(--page-padding)] pb-[var(--section-space)]"><div className="overflow-hidden rounded-[var(--radius-xl)] bg-[var(--accent)] px-7 py-14 text-center sm:px-12 sm:py-20"><h2 className="mx-auto max-w-3xl text-4xl font-bold tracking-[-0.05em] text-[var(--accent-foreground)] sm:text-6xl">Your experience is already valuable. Let&apos;s show it.</h2><p className="mx-auto mt-5 max-w-xl text-[var(--accent-foreground)]/75">Start with what you know. Finish with a CV you feel ready to send.</p><a href="#top" className="mt-8 inline-flex rounded-full bg-[var(--text-primary)] px-6 py-3.5 font-bold text-white transition hover:bg-[#263a63]">Create my CV <span className="ml-2" aria-hidden="true">↗</span></a></div></section>
 
-      <footer className="border-t border-[var(--border)]"><div className="mx-auto flex max-w-[var(--content-width)] flex-col gap-4 px-[var(--page-padding)] py-8 text-sm text-[var(--text-secondary)] sm:flex-row sm:items-center sm:justify-between"><Logo /><p>Build a CV that gets noticed.</p><p>© {new Date().getFullYear()} CVForge</p></div></footer>
+      <footer className="border-t border-[var(--border)]"><div className="mx-auto flex max-w-[var(--content-width)] flex-col gap-4 px-[var(--page-padding)] py-8 text-sm text-[var(--text-secondary)] sm:flex-row sm:items-center sm:justify-between"><Logo /><p>Build a CV that gets noticed.</p><p>© <CurrentYear /> CVForge</p></div></footer>
     </main>
   );
 }
